@@ -1,0 +1,18 @@
+[project]
+name = "data-incident-lab"
+version = "0.1.0"
+description = "A reproducible data engineering incident and recovery lab"
+requires-python = ">=3.10"
+
+[project.scripts]
+incident-lab = "incident_lab:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["incident_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

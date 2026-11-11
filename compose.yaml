@@ -1,0 +1,6 @@
+services:
+  lab:
+    build: .
+    volumes:
+      - ./demo:/data/demo
+    command: ["demo", "--dir", "/data/demo"]
